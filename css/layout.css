@@ -17,8 +17,11 @@
   flex-wrap: wrap;
 }
 
-.column-full,
 .column-half {
+  width: 100%;
+}
+
+.column-full {
   width: 100%;
 }
 
@@ -36,7 +39,7 @@
     width: 50%;
   }
 
-  .row-halved {
+  .row {
     display: flex;
   }
 }

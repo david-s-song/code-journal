@@ -26,22 +26,22 @@
         </div>
       </div>
 
-      <div class="row-halved">
-        <div class="column-half">
-          <label for="image"></label>
-          <img class="image" required name="image" type="image" src="../images/placeholder-image-square.jpg" alt="photoUrlImage"
-            id="image">
-        </div>
-        <div class="column-half">
-          <label class="labels" for="title">Title</label>
-          <input class="placeholders" required name="title" type="text" id="title" placeholder="">
-          <label class="labels" for="photoUrl">Photo Url</label>
-          <input class="placeholders" required name="photoUrl" type="url" id="photoUrl" placeholder="">
+      <div class="row">
+        <div class="column-half flex-column">
+            <label for="image"></label>
+            <img class="image" required name="image" type="image" src="../images/placeholder-image-square.jpg" alt="photoUrlImage"
+              id="image">
+          </div>
+          <div class="column-half flex-column">
+            <label class="labels" for="title">Title</label>
+            <input class="placeholders" required name="title" type="text" id="title" placeholder="">
+            <label class="labels" for="photoUrl">Photo Url</label>
+            <input class="placeholders" required name="photoUrl" type="url" id="photoUrl" placeholder="">
         </div>
       </div>
 
       <div class="row">
-        <div class="column-full">
+        <div class="column-full flex-column">
           <label class="labels" for="notes">Notes</label>
           <textarea class="placeholders"
             required

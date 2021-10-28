@@ -34,12 +34,7 @@
   display: flex;
 }
 
-.column-half {
-  display: flex;
-  flex-direction: column;
-}
-
-.column-full {
+.flex-column {
   display: flex;
   flex-direction: column;
 }
