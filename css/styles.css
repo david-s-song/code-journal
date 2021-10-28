@@ -16,19 +16,20 @@
   padding-left: 1.5rem;
 }
 
-.heading-new-entry {
+.heading-new-entry,
+.entries-li-header {
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 41px;
-  color: #292929;
+  padding-bottom: 1rem;
 }
 
-.image,
-#li-image {
+.image {
   width: 100%;
   height: 20rem;
   object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 .row {
@@ -42,10 +43,7 @@
 
 #title,
 #photoUrl,
-#notes,
-#li-title,
-#li-photoUrl,
-#li-notes {
+#notes {
   margin-bottom: 1rem;
 }
 
@@ -90,4 +88,12 @@
 
 li {
   list-style: none;
+}
+
+.entries-sub-header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 41px;
+  padding-bottom: 1rem;
 }

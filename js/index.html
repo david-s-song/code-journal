@@ -27,15 +27,15 @@
       </div>
       <div class="row">
         <div class="column-half flex-column">
-            <label for="image"></label>
-            <img class="image" required name="image" type="image" src="../images/placeholder-image-square.jpg" alt="photoUrlImage"
-              id="image">
-          </div>
-          <div class="column-half flex-column">
-            <label class="labels" for="title">Title</label>
-            <input class="placeholders" required name="title" type="text" id="title" placeholder="">
-            <label class="labels" for="photoUrl">Photo Url</label>
-            <input class="placeholders" required name="photoUrl" type="url" id="photoUrl" placeholder="">
+          <label for="image"></label>
+          <img class="image" required name="image" type="image" src="../images/placeholder-image-square.jpg" alt="photoUrlImage"
+            id="image">
+        </div>
+        <div class="column-half flex-column">
+          <label class="labels" for="title">Title</label>
+          <input class="placeholders" required name="title" type="text" id="title" placeholder="">
+          <label class="labels" for="photoUrl">Photo Url</label>
+          <input class="placeholders" required name="photoUrl" type="url" id="photoUrl" placeholder="">
         </div>
       </div>
 
@@ -58,39 +58,27 @@
   </div>
   <!-- sibling div -->
   <div class="container entries" data-view="entries">
-    <ul class="entry-list"></ul>
-      <li>
-        <div class="row">
-          <div class="column-half">
-            <h1 class="heading-new-entry">Entries</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column-half flex-column">
-            <label for="image"></label>
-            <img class="image" required name="image" type="image" src="../images/placeholder-image-square.jpg"
-              alt="photoUrlImage" id="li-image">
-          </div>
-          <div class="column-half flex-column">
-            <label class="labels" for="title">Title</label>
-            <input class="placeholders" required name="title" type="text" id="li-title" placeholder="">
-            <label class="labels" for="photoUrl">Photo Url</label>
-            <input class="placeholders" required name="photoUrl" type="url" id="li-photoUrl" placeholder="">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="column-full flex-column">
-            <label class="labels" for="notes">Notes</label>
-            <textarea class="placeholders" required name="notes" type="textArea" id="li-notes" placeholder=""></textarea>
-            <div class="btn">
-              <button class="button-save" type="submit">SAVE</button>
-            </div>
-          </div>
+    <ul class="entry-list entries-header">
+      <li class="row">
+        <div class="column-half">
+          <h1 class="heading-new-entry">Entries</h1>
         </div>
       </li>
-
+      <li class="row">
+        <div class="column-half flex-column">
+          <label for="image"></label>
+          <img class="image" required name="image" type="image" src="../images/placeholder-image-square.jpg"
+            alt="photoUrlImage" id="li-image">
+        </div>
+        <div class="column-half flex-column">
+          <h3 class="name-heading" for="title">Ada Lovelace</h3>
+          <p class="paragraph" for="photoUrl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, nemo!</p>
+        </div>
+      </li>
+    </ul>
   </div>
+
+
 
   <script src="main.js"></script>
   <script src="data.js"></script>
