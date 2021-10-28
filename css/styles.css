@@ -24,7 +24,8 @@
   color: #292929;
 }
 
-.image {
+.image,
+#li-image {
   width: 100%;
   height: 20rem;
   object-fit: cover;
@@ -41,7 +42,10 @@
 
 #title,
 #photoUrl,
-#notes {
+#notes,
+#li-title,
+#li-photoUrl,
+#li-notes {
   margin-bottom: 1rem;
 }
 
@@ -58,7 +62,8 @@
   padding: 0.3rem;
 }
 
-#notes {
+#notes,
+#li-notes {
   height: 9rem;
   display: flex;
 }
@@ -81,4 +86,8 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+
+li {
+  list-style: none;
 }

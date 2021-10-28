@@ -25,11 +25,6 @@
           <h1 class="heading-new-entry">New Entry</h1>
         </div>
       </div>
-
-  <div class="container entries" data-view="entries">
-    <ul class="entry-list"></ul>
-  </div>
-
       <div class="row">
         <div class="column-half flex-column">
             <label for="image"></label>
@@ -60,6 +55,41 @@
       </div>
 
     </form>
+  </div>
+  <!-- sibling div -->
+  <div class="container entries" data-view="entries">
+    <ul class="entry-list"></ul>
+      <li>
+        <div class="row">
+          <div class="column-half">
+            <h1 class="heading-new-entry">Entries</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-half flex-column">
+            <label for="image"></label>
+            <img class="image" required name="image" type="image" src="../images/placeholder-image-square.jpg"
+              alt="photoUrlImage" id="li-image">
+          </div>
+          <div class="column-half flex-column">
+            <label class="labels" for="title">Title</label>
+            <input class="placeholders" required name="title" type="text" id="li-title" placeholder="">
+            <label class="labels" for="photoUrl">Photo Url</label>
+            <input class="placeholders" required name="photoUrl" type="url" id="li-photoUrl" placeholder="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column-full flex-column">
+            <label class="labels" for="notes">Notes</label>
+            <textarea class="placeholders" required name="notes" type="textArea" id="li-notes" placeholder=""></textarea>
+            <div class="btn">
+              <button class="button-save" type="submit">SAVE</button>
+            </div>
+          </div>
+        </div>
+      </li>
+
   </div>
 
   <script src="main.js"></script>
