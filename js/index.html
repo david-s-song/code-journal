@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+  <title>Code Journal</title>
+</head>
+<body>
+
+  <div class="container-header">
+    <h2 class="header-logo">Code Journal</h2>
+  </div>
+
+  <div class="container entry-form" data-view="entry-form">
+    <form id="entry-of-form" class="data">
+      <div class="row">
+        <div class="column-half">
+          <h1 class="heading-new-entry">New Entry</h1>
+        </div>
+      </div>
+
+      <div class="row-halved">
+        <div class="column-half">
+          <label for="image"></label>
+          <img class="image" required name="image" type="image" src="../images/placeholder-image-square.jpg" alt="photoUrlImage"
+            id="image">
+        </div>
+        <div class="column-half">
+          <label class="labels" for="title">Title</label>
+          <input class="placeholders" required name="title" type="text" id="title" placeholder="">
+          <label class="labels" for="photoUrl">Photo Url</label>
+          <input class="placeholders" required name="photoUrl" type="url" id="photoUrl" placeholder="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column-full">
+          <label class="labels" for="notes">Notes</label>
+          <textarea class="placeholders"
+            required
+            name="notes"
+            type="textArea"
+            id="notes"
+            placeholder=""></textarea>
+          <div class="btn">
+            <button class="button-save" type="submit">SAVE</button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="data.js"></script>
+</body>
+</html>
