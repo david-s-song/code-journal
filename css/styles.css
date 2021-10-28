@@ -1,7 +1,6 @@
 * {
   font-family: 'Proza Libre', sans-serif;
   background-color: #f0f0f0;
-  margin: 3px;
 }
 
 .header-logo {
@@ -35,7 +34,11 @@
   display: flex;
 }
 
-.column-half,
+.column-half {
+  display: flex;
+  flex-direction: column;
+}
+
 .column-full {
   display: flex;
   flex-direction: column;
@@ -57,7 +60,7 @@
 
 .labels {
   font-size: 0.75rem;
-  padding-bottom: 0.3rem;
+  padding: 0.3rem;
 }
 
 #notes {
@@ -82,5 +85,5 @@
 .btn {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  width: 100%;
 }
