@@ -26,8 +26,6 @@ function submitForm(event) {
   $image.setAttribute('src', '../images/placeholder/image/square.jpg');
 }
 
-var $viewEntries = document.querySelector('.entry-list');
-
 function entryRender(viewEntries) {
   // top 1st part
 
@@ -71,10 +69,19 @@ function entryRender(viewEntries) {
   $columnHalfEntry.appendChild($paragraph);
 
 }
-
+var $viewEntries = document.querySelector('.entry-list');
 var $containerEntries = document.querySelector('.entries');
 
 for (var i = 0; i < $viewEntries.length; i++) {
   var $entry = entryRender($viewEntries[i]);
   $containerEntries.append($entry);
 }
+
+function DOMContentLoaded(event) {
+  for (var i = 0; i < $entryData.viewEntries.length; i++) {
+    var $EntryRendered = entryRender($entryData.viewEntries[i]);
+    $viewEntries.append($EntryRendered);
+  }
+}
+
+$viewEntries.addEventListener('DOMContentLoaded', DOMContentLoaded);
