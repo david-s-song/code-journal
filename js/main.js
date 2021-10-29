@@ -25,3 +25,56 @@ function submitForm(event) {
   $entryData.reset();
   $image.setAttribute('src', '../images/placeholder/image/square.jpg');
 }
+
+var $viewEntries = document.querySelector('.entry-list');
+
+function entryRender(viewEntries) {
+  // top 1st part
+
+  var $ulEntryList = document.createElement('ul');
+  $ulEntryList.setAttribute('class', 'entry-list');
+
+  var $liRow = document.createElement('li');
+  $liRow.setAttribute('class', 'row');
+  $ulEntryList.appendChild($liRow);
+
+  var $columnHalfTop = document.createElement('div');
+  $columnHalfTop.setAttribute('class', 'column-half');
+  $liRow.appendChild($columnHalfTop);
+
+  var $headerEntry = document.createElement('h1');
+  $headerEntry.setAttribute('class', 'heading-new-entry');
+
+  // top is 2nd part
+
+  var $rowHalved = document.createElement('li');
+  $rowHalved.setAttribute('class', 'row');
+
+  var $columnHalfImage = document.createElement('div');
+  $columnHalfImage.setAttribute('class', 'column-half');
+  $rowHalved.appendChild($columnHalfImage);
+
+  var $image = document.createElement('img');
+  $image.className = 'image';
+  $image.setAttribute('src', viewEntries.image);
+  $columnHalfImage.appendChild($image);
+
+  var $columnHalfEntry = document.createElement('div');
+  $columnHalfEntry.setAttribute('class', 'column-half');
+
+  var $nameHeading = document.createElement('name-heading');
+  $nameHeading.setAttribute('name', viewEntries.name);
+  $columnHalfEntry.appendChild($nameHeading);
+
+  var $paragraph = document.createElement('paragraph');
+  $paragraph.setAttribute('name', viewEntries.paragraph);
+  $columnHalfEntry.appendChild($paragraph);
+
+}
+
+var $containerEntries = document.querySelector('.entries');
+
+for (var i = 0; i < $viewEntries.length; i++) {
+  var $entry = entryRender($viewEntries[i]);
+  $containerEntries.append($entry);
+}
